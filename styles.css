@@ -12,8 +12,7 @@ body{
     width: 100%;
     height: 100vh; 
     background-image: url(images/pic1.jpg);
-    background-image: 100vh;
-    
+    background-image: 100vh;   
 }
 .container{
     padding: 10px 10%;
