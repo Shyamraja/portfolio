@@ -131,7 +131,7 @@ nav ul li a:hover::after{
     display: block;
 }
 
-.portfolio{
+.projects{
     display: flex;
     margin: 20 px 0 40px;
 }
