@@ -5,8 +5,7 @@
  box-sizing: border-box;
 }
 body{
-   background:blue; 
-   color:aqua;
+   background:rgb(142, 71, 71); 
 }
 #header{
     width: 100%;
@@ -54,13 +53,14 @@ nav ul li a:hover::after{
 .header-text{
     margin-top: 20%;
     font-size: 30px;
+    color: greenyellow;
 }
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: red;
+    color: white;
 }
 
 
