@@ -53,14 +53,14 @@ nav ul li a:hover::after{
 .header-text{
     margin-top: 20%;
     font-size: 30px;
-    color: greenyellow;
+    color: white;
 }
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: white;
+    color: yellowgreen;
 }
 
 
@@ -80,7 +80,7 @@ nav ul li a:hover::after{
 .about-col-1 img{
         width: 100%;
         border-radius: 15px;
-        height: 80vh;
+        height: 70vh;
 }
 
 .about-col-2{
