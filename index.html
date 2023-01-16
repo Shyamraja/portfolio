@@ -33,8 +33,8 @@
             <h1>Hello! I am <span> Shyam</span> <br>Learning Agile Methodologies</h1>
         </div>
     </div>
-</div>
-<div id="about">
+
+ <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
@@ -45,7 +45,7 @@
                 <p>I am a graduate in Bachelors of engineering in Information Technology
                     from Oulu University Of Applied Sciences majoring in web development technologies.
                 </p>
-
+            
                 <div class="tab-titles">
                     <p class="tab-links" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links" onclick="opentab('experiences')">Experience</p>
@@ -63,26 +63,26 @@
                     </ul>
                 </div>
 
-            <div class="tab-contents" id="experiences">
-                  <ul>
+               <div class="tab-contents" id="experiences">
+                    <ul>
                       <li><span>05/2021-08/2021</span><br>Project Trainee Developer in OAMK Project</li>
                       <li><span>10/2020-01/2021</span><br>Project Developer in Technological University Dublin's Project</li>
                       <li><span>11/2019-04/2020</span><br>Software Developer Trainee in PiiMega Oy</li>
                       <li><span>01/2019-07/2019</span><br>Internship in Nepgo Ry Association</li>
-                   </ul>
+                     </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                      <li><span>Oulu University Of Applied sciences</span><br>Bachelor's Degree in Information Technology Engineering</br>
+                       My Major is in web development technologies</li>
+                    </ul>
+                </div>
             </div>
-
-           <div class="tab-contents" id="education">
-              <ul>
-                <li><span>Oulu University Of Applied sciences</span><br>Bachelor's Degree in Information Technology Engineering</br>
-                    My Major is in web development technologies</li>
-              </ul>
-           </div>
-        </div>
         
+        </div>
     </div>
-</div>
-
+ </div>
     <script>
        var tablinks = document.getElementsByClassName("tab-links");
        var tabcontents = document.getElementsByClassName("tab-contents");
@@ -97,9 +97,8 @@
            event.currentTarget.classList.add("active-link");
           document.getElementById(tabname).classList.add("active-tab");
            }
-   </script>
-
-<div id="projects">
+    </script>
+ <div id="projects">
     <div class="container mt-3">
         <h3 class="text-center">Projects</h3>
         <div class="row">
@@ -193,9 +192,9 @@
             </div>
         </div>        
     </div>
-</div>
+ </div>
 
-<div id="contact">
+ <div id="contact">
     <div class="container">
         <h5 class="text-center">Contact Me</h5>
         <div class="row">
@@ -220,7 +219,7 @@
                 <span id="txt"></span>
             </div>
         </div>
-           
+    </div>          
     </div>
         <script>
           const scriptURL = 'https://script.google.com/macros/s/AKfycbzGmtx3RXGvTyT6MA6GOY8EJTGb_6xUhUKtr8EJg9ssQZgZBYFXPBnJAEsrR79Xbg5X/exec'
@@ -243,7 +242,8 @@
     <div class="footer">
     <span>Developed by HTML,CSS,JavaScript,Bootstrap,Google Spread Sheet and Fontawesome Icons.</span>
     </div>
-</div>
+ </div>
+
 <script>
     var sidemenu = document.getElementById("sidemenu");
     function openmenu(){
@@ -253,5 +253,6 @@
         sidemenu.style.right = "-200px";
     }
 </script>
+</div>
 </body>
 </html>
