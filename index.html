@@ -18,18 +18,19 @@
     <div class="container">
         <nav>
             <image class="logo">
-                
-               <ul>
-                   <li><a href="#">Home</a></li>
-                   <li><a href="#">About</a></li>
-                   <li><a href="#">Projects</a></li>
-                   <li><a href="#">Contact</a></li>
-                </ul>
-        </nav>
 
+                <ul id="sidemenu">
+                   <li><a href="#header">Home</a></li>
+                   <li><a href="#about">About</a></li>
+                   <li><a href="#projects">Projects</a></li>
+                   <li><a href="#contact">Contact</a></li>
+                   <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>   
         <div class="header-text">
             <p>Software Developer</p>
-            <h1>Hi, I am <span> Shyam</span> <br>Software Engineer from Finland</h1>
+            <h1>Hello! I am <span> Shyam</span> <br>Learning Agile Software Development</h1>
         </div>
     </div>
 </div>
@@ -41,8 +42,8 @@
             </div>
             <div class="about-col-2">
                 <h2 class="sub-title">About Myself</h2>
-                <p>I am a graduate of Oulu University Of Applied Sciences.
-                 I graduated in Bachelors of engineering in Information Technology(IT) majoring in web development technologies .
+                <p>I am a graduate in Bachelors of engineering in Information Technology
+                    from Oulu University Of Applied Sciences majoring in web development technologies.
                 </p>
 
                 <div class="tab-titles">
@@ -102,6 +103,7 @@
     <div class="container mt-3">
         <h3 class="text-center">Projects</h3>
         <div class="row">
+
             <div class="col-lg-4 mt-4">
                 <div class="card">
                     <img class="card-img-top" src="images/OnlineShop.png" alt="Card image" style="width:100%">
@@ -116,6 +118,22 @@
                     </div>
                 </div>
             </div>
+           
+            <div class="col-lg-4 mt-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/NationalDigitalRepo.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">National Digital Repository</h4>
+                        <p class="card-text">This is a part of a web application developed by React,HTML and CSS.
+                            The information can be searched,uploaded and submitted as required.
+                        </p>
+                        <div class="text-center">
+                            <a href="https://national-digital-repository.netlify.app/"class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="col-lg-4 mt-4">
                 <div class="card">
                     <img class="card-img-top" src="images/userapp.png" alt="Card image" style="width:100%">
@@ -131,20 +149,6 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 mt-4">
-                <div class="card">
-                    <img class="card-img-top" src="images/NationalDigitalRepo.png" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">National Digital Repository</h4>
-                        <p class="card-text">This is a part of a web application developed by React,HTML and CSS.
-                            The information can be searched,uploaded and submitted as required.
-                        </p>
-                        <div class="text-center">
-                            <a href="https://national-digital-repository.netlify.app/"class="btn btn-success">Link</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="col-lg-4 mt-4">
                 <div class="card">
                     <img class="card-img-top" src="images/Library.png" alt="Card image" style="width:100%">
@@ -173,6 +177,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 mt-4">
                 <div class="card">
                     <img class="card-img-top" src="images/Todo.png" alt="Card image" style="width:100%">
@@ -199,10 +204,11 @@
                 <p><i class="far fa-envelope-open"></i>rsambhetwal@gmail.com</p>
                 <p><i class="fas fa-phone-square-alt"></i>0453519888</p>
                 <div class="social-icons">
+                    <p>Github and Linkedin</p>
                     <a href="https://github.com/Shyamraja"><i class="fa-brands fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/rshyamvetwal/"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <button class="btn btn-primary" type="download">DownloadCV</button>
+                <a href="images/CV-Shyam.pdf" download class="btn btn-primary">DownloadCV</button></a>
             </div>
             <div class="content-right">
                <form name ="submit-to-google-sheet">
@@ -211,21 +217,41 @@
                   <textarea name="message" rows="6" placeholder="Message"></textarea>
                   <button type="submit" class="btn btn-primary">Send Message</button>  
                 </form>
+                <span id="txt"></span>
             </div>
         </div>
-            <div class="footer">
-              <p>The project is developed by using HTML,CSS,JavaScript,Bootstrap and Fontawesome Icons</div>
+           
     </div>
         <script>
           const scriptURL = 'https://script.google.com/macros/s/AKfycbzGmtx3RXGvTyT6MA6GOY8EJTGb_6xUhUKtr8EJg9ssQZgZBYFXPBnJAEsrR79Xbg5X/exec'
           const form = document.forms['submit-to-google-sheet']
+          const txt = document.getElementById("txt")
+
           form.addEventListener('submit', e => {
            e.preventDefault()
              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
-        })
+              .then(response => {
+                 txt.innerHTML = "Message sent successfully!"
+                 setTimeout (function (){
+                    txt.innerHTML = ""
+                 },5000)
+                 form.reset()
+                })
+              .catch(error => console.error('Error!', error.message))
+           })
         </script>
+    <div class="footer">
+    <span>Developed by HTML,CSS,JavaScript,Bootstrap,Google Spread Sheet and Fontawesome Icons.</span>
+    </div>
 </div>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
 </body>
 </html>
