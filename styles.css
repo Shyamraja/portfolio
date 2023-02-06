@@ -20,10 +20,7 @@ nav{
     width: 140px;
 }
 #header{
-    width: 100%;
-    height: 100vh; 
-    background-image: url(images/poster.png);
-    background-image: 100vh;   
+    background-image: url(images/poster.png);;   
     background-attachment: fixed;
 }
 .container{
@@ -68,6 +65,7 @@ nav ul li a:hover::after{
 #about{
     padding: 100px 0;
     background-color: black;
+    margin-top: 20px;
 }
 .row{
     display: flex;
@@ -75,7 +73,8 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
     }
 .about-col-1{
-        flex-basis: 35%;
+   
+    flex-basis: 35%;
     }   
 .about-col-1 img{
         width: 100%;
