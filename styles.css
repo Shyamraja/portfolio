@@ -12,13 +12,14 @@ body{
 }
 nav{
     display: flex;
-    align-items: center;
+    align-items: right;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.logo{
-    width: 140px;
-}
+logo img {
+    width: 175px;
+    vertical-align: middle;
+  }
 #header{
     background-image: url(images/poster.png);;   
     background-attachment: fixed;
