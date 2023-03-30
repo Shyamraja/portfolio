@@ -8,24 +8,20 @@ html{
     scroll-behavior: smooth;
 }
 body{
-   background-color:black; 
+   background-color: rgb(40, 16, 16); 
 }
 nav{
     display: flex;
     align-items: right;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: rgb(23, 24, 27);
 }
-logo img {
-    width: 175px;
-    vertical-align: middle;
-  }
+
 #header{
     background-image: url(images/poster.png);;   
     background-attachment: fixed;
-}
-.container{
-    padding: 10px 10%;
+    height: 700px;
 }
 nav ul li{
     display: inline-block;
@@ -35,7 +31,7 @@ nav ul li{
 nav ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
     position: relative;
 }
 nav ul li a::after{
@@ -66,7 +62,7 @@ nav ul li a:hover::after{
 #about{
     padding: 100px 0;
     background-color: black;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 .row{
     display: flex;
@@ -74,7 +70,6 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
     }
 .about-col-1{
-   
     flex-basis: 35%;
     }   
 .about-col-1 img{

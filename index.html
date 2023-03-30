@@ -14,11 +14,10 @@
 </head>
 
 <body>
-        <div id="header">
-             <div class="container">
+        <section id="header">
           <nav aria-label="navigation menu"> 
             <img class = "logo"
-            src="assets\images\portfolio.png"
+            src="images\portfolio.png"
             height="50"
             alt="logo image"
            />
@@ -42,10 +41,9 @@
             <p>Software Developer</p>
             <h1>Hello! I am <span> Shyam</span> <br>Learning Software,Agile,Data,Cloud...</h1>
          </div>
-     </div>
-
-
- <div id="about">
+    </section>
+<main>
+ <section id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
@@ -95,7 +93,7 @@
         
         </div>
     </div>
- </div>
+
     <script>
        var tablinks = document.getElementsByClassName("tab-links");
        var tabcontents = document.getElementsByClassName("tab-contents");
@@ -111,7 +109,8 @@
           document.getElementById(tabname).classList.add("active-tab");
            }
     </script>
- <div id="projects">
+</section>
+ <section id="projects">
     <div class="container mt-3">
         <h3 class="text-center">Projects</h3>
         <div class="row">
@@ -206,9 +205,9 @@
             </div>
         </div>        
     </div>
- </div>
+</section>
 
- <div id="contact">
+ <section id="contact">
     <div class="container">
         <h5 class="text-center">Contact Me</h5>
         <div class="row">
@@ -234,7 +233,8 @@
             </div>
         </div>
     </div>          
-    </div>
+</section>
+</main>
         <script>
           const scriptURL = 'https://script.google.com/macros/s/AKfycbzGmtx3RXGvTyT6MA6GOY8EJTGb_6xUhUKtr8EJg9ssQZgZBYFXPBnJAEsrR79Xbg5X/exec'
           const form = document.forms['submit-to-google-sheet']
