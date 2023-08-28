@@ -2,28 +2,62 @@
  margin: 0;
  padding: 0;
  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- box-sizing: border-box;
+ *::before,
+*::after {
+    box-sizing: border-box;
+}
 }
 html{
     scroll-behavior: smooth;
 }
-body{
-   background-color: rgb(40, 16, 16); 
-}
-nav{
-    display: flex;
-    align-items: right;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: rgb(23, 24, 27);
-}
-.logo {
-    height:10vh;
-}
-#header{
+#body {
+    background-color: rgb(31, 10, 10); 
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}  
+
+#header {
     background-image: url(images/poster.png);;   
     background-attachment: fixed;
-    height: 700px;
+    padding: 150px 0;
+    height: 680px;
+}
+.header-text{
+    margin-top: 10%;
+    font-size: 20px;
+    color: whitesmoke
+}
+.header-text h1{
+    margin-left: 500px;
+    font-size: 60px;
+    margin-top: 0px;
+}
+.header-text h2{
+    margin-left: 10px;
+    font-size: 60px;
+    margin-top: 0px;
+}
+.header-text p{
+    margin-left: 600px;
+    font-size: 20px;
+}
+.header-text h1 span{
+    color: yellowgreen;
+}
+
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(23, 24, 27);
+    z-index: 1000; 
+  }
+.logo {
+    height:8vh;
 }
 nav ul li{
     display: inline-block;
@@ -49,22 +83,12 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
-.header-text{
-    margin-top: 24%;
-    font-size: 20px;
-    color: whitesmoke;
-}
-.header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
-}
-.header-text h1 span{
-    color: yellowgreen;
-}
-#about{
-    padding: 100px 0;
+
+#about{  
+    padding: 50px 0;
     background-color: black;
-    margin-top: 0px;
+    margin-top: 5px;
+    height: 685px;
 }
 .row{
     display: flex;
@@ -77,14 +101,17 @@ nav ul li a:hover::after{
 .about-col-1 img{
         width: 100%;
         border-radius: 15px;
-        height: 70vh;
+        height: 75vh;
 }
-.about-col-2{
+.about-col-2{ 
     flex-basis: 60%;
     position: centre;
     color: white;
+    height: 65vh;
+    
 }
 .sub-title{
+    margin-top: 30px;
     font-size: 30px;
     font-weight: 600;
 	color: white;
@@ -95,6 +122,7 @@ nav ul li a:hover::after{
     color: white;
     margin: 20 px 0 40px;
     font-size: 25px;
+    margin-left: 150px;
 }
 .tab-links{
     margin-right: 55px;
@@ -119,46 +147,66 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li span{
     color: #b54769;
-    font-size: 15px;
-    
+    font-size: 19px;
+    margin-left: 0px;
 }
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
     color: white;
+    margin-left: 110px;
 }
 .tab-contents ul li:hover {
     background-color: lightBlue;
   } 
 .tab-contents{
+    font-size: 15px;
     display: none;
 }
 .tab-contents.active-tab{
     display: block;
 }
-
+.tab-contents.active-tab ul li{
+    display: block;
+}
 #projects{
+    margin-top: 5px;
     display: flex;
     margin: 20 px 0 40px;
     background-color:black; 
 }
+
+.project-card {
+    height: 370px;
+}
 .text-center{
-    font-size: 30px;
-    font-weight: 600;
-	color: beige;
-    position: centre;   
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+.live-link-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 #contact{
-    width: 100%;
+    margin-top: 5px;
     background-color:black; 
+    height: 500px;
+    color: white;
 }
 .content-left{
+    margin-top: 20px;
     flex-basis: 35%;
     font-size: 15px;
     color: white;
 }
 .content-right{
+    margin-top: 30px;
     flex-basis: 60%;
+    color: white;
 }
 .content-left p{
     margin-top:30px
@@ -199,6 +247,12 @@ nav ul li a:hover::after{
 .content-right form{
     width: 100%; 
 }
+.text{
+    margin-left: 700px;
+    margin-top: 5px;
+    color: white;
+    font-size: 20px;
+}
 form input, form textarea{
     width: 100%;
     border: 0;
@@ -210,11 +264,11 @@ form input, form textarea{
     border-radius: 6px;
 }
 .footer{
-    background:whitesmoke;
+    background: rgb(31, 10, 10); 
+    color:whitesmoke;
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 15px 23px;
-    color: rgb(14, 13, 13);
     text-align: center;
     text-align: center;
 }
@@ -227,7 +281,7 @@ form input, form textarea{
 nav .fas{
     display: none;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
     #header{
         background-image: url(images/profile.png);
         background: black;

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,87 +11,89 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/54e3ced4d8.js" crossorigin="anonymous"></script>
-</head>
+  </head>
 
 <body>
-        <section id="header">
           <nav aria-label="navigation menu"> 
             <img class = "logo"
-            src="images\portfolio.png"alt="logo image"/>
-           <ul id="menubar" role="menubar" aria-label="navigation menu"  style="float:right">
-             <li role="none">
-               <a href="#header" role="menuitem" tabindex="0">Home</a>
-             </li>
-              <li role="none">
-                <a href="#about" role="menuitem" tabindex="0">About</a>
+             src="images\portfolio.png"alt="logo image"/>
+             <ul id="menubar" role="menubar" aria-label="navigation menu"  style="float:right">
+               <li role="none">
+                <a href="#header" role="menuitem" tabindex="0">Home</a>
               </li>
               <li role="none">
-                <a href="#projects" role="menuitem" tabindex="0">Projects</a>
-             </li>
-              <li role="none">
-               <a href="#contact" role="menuitem" tabindex="0">Contact</a>
-             </li>
-           </ul>
-           <i class="fas fa-bars" onclick="openmenu()"></i>
+                 <a href="#about" role="menuitem" tabindex="0">About</a>
+               </li>
+               <li role="none">
+                 <a href="#projects" role="menuitem" tabindex="0">Projects</a>
+               </li>
+               <li role="none">
+                  <a href="#contact" role="menuitem" tabindex="0">Contact</a>
+               </li>       
+               <i class="fas fa-times" onclick="closemenu()"></i>
+              </ul>
+               <i class="fas fa-bars" onclick="openmenu()"></i>
          </nav>
-         <div class="header-text">
-            <p>Software Developer</p>
-            <h1>Hello! I am <span> Shyam</span> <br>Learning Software,Agile,Data,Cloud...</h1>
-         </div>
-    </section>
-<main>
- <section id="about">
-    <div class="container">
-        <div class="row">
+         <section id="header">
+           <div class="header-text">
+              <p>Passionate IT Engineer</p>
+              <h1>Hello! I am <span> Shyam</span></h1> <br>
+              <h2>I have been working with Agile Software Industry</h2>
+              <p>Welcome to my profile</p>
+           </div>
+         </section>
+     <section id="about">
+   
+         <div class="row">
             <div class="about-col-1">
-              <img src="images/background.png">
+              <img src="images/background.jpg">
             </div>
-            <div class="about-col-2">
-                <h2 class="sub-title">About Myself</h2>
-                <p>I am a graduate in Bachelors of engineering in Information Technology
-                    from Oulu University Of Applied Sciences majoring in web development technologies.
-                </p>
+              <div class="about-col-2">
+                     <h2 class="sub-title">About Myself</h2>
+                      <p>I am a graduate in IT Engineering from OULU UAS and 
+                        currently doing Masters in IT Engineering in the University Of Turku.
+                      </p>
             
-                <div class="tab-titles">
-                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experiences')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
+                    <div class="tab-titles">
+                     <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                     <p class="tab-links" onclick="opentab('experiences')">Experience</p>
+                     <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
 
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Front End Development</span><br>JavaScript,React,Bootstrap</li>
-                        <li><span>Back End Development</span><br>Node,Express,Python(basics)</li>
+                   <div class="tab-contents active-tab" id="skills">
+                      <ul>
+                        <li><span>Programming languages</span><br>JavaScript,Python</li>
+                        <li><span>Frameworks</span><br>React,Node,Flask,Express,.Net</li>
                         <li><span>Agile Methodologies</span><br>Git, Scrum,Jira,Software Development lifecycles</li>
                         <li><span>Database Design and Data Analysis</span><br>SQL,Excel,MySQl,MongoDb</li>
-                        <li><span>Knowledgeable and Understandings</span><br>C#,Java,Basic testing,Cloud Technologies:MS Azure/Google Cloud,DevOps methods</br>
-                         Jenkins,Linux OS,Power Bi, MS Office,Technical Documentation</li>
+                        <li><span>Knowledgeable and Understandings</span><br>C#,Java, Php, Basic testing,Cloud Technologies:MS Azure/Google Cloud,DevOps methods</br>
+                         Jenkins,DevOps basics,Linux OS,Power Bi, MS Office,Technical Documentation</li>
                     </ul>
                 </div>
 
                <div class="tab-contents" id="experiences">
                     <ul>
-                        <li><span>02/2023-Current</span><br>FullStack Trainee in Integrify(React,Java,AWS,MongoDB,PostgreSql)</li>
+                        <li><span>05/2023-Current</span><br>Research and Development Developer Vaisala(React,C#,.Net,Typescript)</li>
                         <li><span>05/2021-08/2021</span><br>Research and Development Project Trainee in OAMK(frontend, React)</li>
                         <li><span>10/2020-01/2021</span><br>Internship in Technological University Dublin's project(Java,Node)</li>
                         <li><span>11/2019-04/2020</span><br>Software Developer Trainee in PiiMega Oy(SQL,C#,.Net)</li>
                         <li><span>01/2019-07/2019</span><br>Internship in Nepgo Ry Association(HTML,CSS,React)</li>
-                        <li><span>10/2019-12/2019</span><br>Research and Development Project in Demola Global</li>
+                        <li><span>10/2019-12/2019</span><br>Research and Development Project Demola Global</li>
                     </ul>
                 </div>
 
                 <div class="tab-contents" id="education">
                     <ul>
-                      <li><span>Oulu University Of Applied sciences</span><br>Bachelor's Degree in Information Technology Engineering</br>
-                       My Major is in web development technologies</li>
+                        <li><span>University Of Turku(2023-Ongoing)</span><br>Masters in Information Technology Engineering</br>
+                             Majoring in Advanced Agile Software development Practices</li>
+                       <li><span>Oulu University Of Applied sciences(2018-2022)</span><br>Bachelor's Degree in Information Technology Engineering</br>
+                             My Major is in web development technologies</li>
                     </ul>
                 </div>
             </div>
         
-        </div>
-    </div>
-
-    <script>
+         </div>   
+     <script>
        var tablinks = document.getElementsByClassName("tab-links");
        var tabcontents = document.getElementsByClassName("tab-contents");
 
@@ -104,15 +106,26 @@
           }
            event.currentTarget.classList.add("active-link");
           document.getElementById(tabname).classList.add("active-tab");
-           }
-    </script>
-</section>
+           }  
+     </script>
+
+     <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+     </script>
+  </section>
+
  <section id="projects">
     <div class="container mt-3">
         <h3 class="text-center">Projects</h3>
         <div class="row">
             <div class="col-lg-4 mt-4">
-                <div class="card">
+                <div class="card project-card">
                     <img class="card-img-top" src="images/CountryFinder.png" alt="Card image" style="width:100%">
                     <div class="card-body">
                         <h4 class="card-title">Country Finder App</h4>
@@ -127,7 +140,7 @@
             </div>
 
             <div class="col-lg-4 mt-4">
-                <div class="card">
+               <div class="card project-card">
                     <img class="card-img-top" src="images/OnlineShop.png" alt="Card image" style="width:100%">
                     <div class="card-body">
                         <h4 class="card-title">Ecommerce Shop</h4>
@@ -135,14 +148,14 @@
                              can view the products, filter the products and order those.
                         </p>
                         <div class="text-center">
-                            <a href="https://onlinetshirtshop.netlify.app/"class="btn btn-success">Live Link</a>
+                            <a href="https://onlinetshirtshop.netlify.app/"class="btn btn-success live-link-button">Live Link</a>
                         </div>
                     </div>
                 </div>
             </div>
            
             <div class="col-lg-4 mt-4">
-                <div class="card">
+              <div class="card project-card">
                     <img class="card-img-top" src="images/NationalDigitalRepo.png" alt="Card image" style="width:100%">
                     <div class="card-body">
                         <h4 class="card-title">National Digital Repository</h4>
@@ -150,7 +163,7 @@
                             The information can be searched,uploaded and submitted as required.
                         </p>
                         <div class="text-center">
-                            <a href="https://national-digital-repository.netlify.app/"class="btn btn-success">Live Link</a>
+                            <a href="https://national-digital-repository.netlify.app/"class="btn btn-success live-link-button">Live Link</a>
                         </div>
                     </div>
                 </div>
@@ -158,21 +171,35 @@
         
 
             <div class="col-lg-4 mt-4">
-                <div class="card">
+              <div class="card project-card">
                     <img class="card-img-top" src="images/Library.png" alt="Card image" style="width:100%">
                     <div class="card-body">
                         <h4 class="card-title">Library Management System</h4>
                         <p class="card-text">This is a desktop application developed with MS Access database, C#,
                              SQL.The informations can be searched, added and updated as required.</p>
                         <div class="text-center">
-                            <a href="https://github.com/Shyamraja/LibraryManagementSystem"class="btn btn-success">Live Link</a>
+                            <a href="https://github.com/Shyamraja/LibraryManagementSystem"class="btn btn-success live-link-button">Live Link</a>
                         </div>
                     </div>
                 </div>
             </div>
              
             <div class="col-lg-4 mt-4">
-                <div class="card">
+                <div class="card project-card">
+                    <img class="card-img-top" src="images/Todo.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Firebase App</h4>
+                        <p class="card-text">This is a web application completed with React and Firebase.</br>
+                            The todos can be added and is seen updated in user's web browser :</p>
+                        <div class="text-center">
+                            <a href="https://todo-app-cp-7ffef.firebaseapp.com/"class="btn btn-success live-link-button ">Live Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card project-card">
                     <img class="card-img-top" src="images/userapp.png" alt="Card image" style="width:100%">
                     <div class="card-body">
                         <h4 class="card-title">User Info App</h4>
@@ -180,49 +207,46 @@
                             of users in Card and in details via MORE INFO button as Modal page.
                         <p>
                         <div class="text-center">
-                            <a href="https://mystifying-tereshkova-7465c2.netlify.app/"class="btn btn-success">Live Link</a>
+                            <a href="https://mystifying-tereshkova-7465c2.netlify.app/"class="btn btn-success live-link-button ">Live Link</a>
                         </div>
                     </div>
                 </div>
             </div>
             
             
-            <div class="col-lg-4 mt-4">
-                <div class="card">
-                    <img class="card-img-top" src="images/Todo.png" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">Firebase Todo App</h4>
-                        <p class="card-text">This is a web application completed with React and Firebase.</br>
-                            The todos can be added and is seen updated in user's web browser :</p>
-                        <div class="text-center">
-                            <a href="https://todo-app-cp-7ffef.firebaseapp.com/"class="btn btn-success">Live Link</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           
         </div>        
     </div>
-</section>
+ </section>
 
  <section id="contact">
     <div class="container">
-        <h5 class="text-center">Contact Me</h5>
+        <h5 class="text">Contact Me</h5>
         <div class="row">
             <div class="content-left">
                 <h6 class="title">Contact Info</h6>
                 <p><i class="far fa-envelope-open"></i>rsambhetwal@gmail.com</p>
-                <p><i class="fas fa-phone-square-alt"></i>0453519888</p>
+                <p><i class="fas fa-phone-square-alt"></i>04535888</p>
                 <div class="social-icons">
                     <p>Github and Linkedin</p>
                     <a href="https://github.com/Shyamraja"><i class="fa-brands fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/rshyamvetwal/"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <a href="images/CV-Shyam.pdf" download class="btn btn-primary">DownloadCV</button></a>
+                <a href="images/.CV-Shyam.pdf" download class="btn btn-primary" id="download-cv-button">Download CV</a>
+                  <p id="download-cv-message"></p>
+
+                   <script>
+                    document.getElementById("download-cv-button").addEventListener("click", function() {
+                    document.getElementById("download-cv-message").textContent = "CV is already submitted to you.";
+                   });
+                 </script>
+                
             </div>
             <div class="content-right">
                <form name ="submit-to-google-sheet">
                   <input type="text" name="fullname" placeholder="FullName" required>
                   <input type="email" name="email" placeholder="Email" required>
+                  
                   <textarea name="message" rows="6" placeholder="Message"></textarea>
                   <button type="submit" class="btn btn-primary">Send Message</button>  
                 </form>
@@ -230,8 +254,9 @@
             </div>
         </div>
     </div>          
-</section>
-</main>
+ </section>
+
+
         <script>
           const scriptURL = 'https://script.google.com/macros/s/AKfycbzGmtx3RXGvTyT6MA6GOY8EJTGb_6xUhUKtr8EJg9ssQZgZBYFXPBnJAEsrR79Xbg5X/exec'
           const form = document.forms['submit-to-google-sheet']
@@ -250,20 +275,10 @@
               .catch(error => console.error('Error!', error.message))
            })
         </script>
+    
     <div class="footer">
-    <span>Developed by HTML,CSS,JavaScript,Bootstrap,Google Spread Sheet and Fontawesome Icons.</span>
+       <span>Developed by HTML,CSS,JavaScript,Bootstrap,Google Spread Sheet and Fontawesome Icons.</span>
     </div>
- </div>
 
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-</script>
-</div>
 </body>
 </html>
